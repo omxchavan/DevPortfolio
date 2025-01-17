@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OM CHAVAN</title>
-    <link rel="icon" type="image/x-icon" href="/images/om.png">
+    <link rel="icon" type="image/x-icon" href="/images/om.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      .container {
+        cursor: url(./cursor.png), pointer;
+      }
+      
+    </style>
   </head>
   <body>
     <!--header -->
-    <section id="nav">
+    <section class="nav" id="nav">
       <div class="container">
         <header
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -29,7 +35,7 @@
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page"
+              <a href="#profile" class="nav-link active" aria-current="page"
                 >Profile</a
               >
             </li>
@@ -42,13 +48,17 @@
             <li class="nav-item">
               <a href="#contacts" class="nav-link">Contact</a>
             </li>
+            <li>
+              <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
+            </li>
           </ul>
         </header>
       </div>
     </section>
 
+
     <!--profile-->
-    <section class="profile">
+    <section class="profile" id="profile">
       <div class="container">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -120,13 +130,21 @@
             </div>
             <div class="carousel-item">
               <a href="./images/404.jpg" target="_blank">
-                <img src="./images/Vote.png" class="d-block w-100" alt="Voting-System-project" />
+                <img
+                  src="./images/Vote.png"
+                  class="d-block w-100"
+                  alt="Voting-System-project"
+                />
               </a>
             </div>
 
             <div class="carousel-item">
               <a href="https://atlas-nine-dusky.vercel.app/" target="_blank">
-                <img src="./images/atlas.png" class="d-block w-100" alt="Atlas-game-project" />
+                <img
+                  src="./images/atlas.png"
+                  class="d-block w-100"
+                  alt="Atlas-game-project"
+                />
               </a>
             </div>
           </div>
@@ -277,7 +295,7 @@
                 <use xlink:href="#bootstrap"></use>
               </svg>
             </a>
-            <p class="text-body-secondary">© 2024</p>
+            <p class="text-body-secondary">© 2025</p>
           </div>
 
           <div class="col mb-3"></div>
@@ -359,5 +377,17 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggleButton = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      toggleButton.addEventListener("click", () => {
+        const isDarkMode = body.getAttribute("data-bs-theme") === "dark";
+        body.setAttribute("data-bs-theme", isDarkMode ? "light" : "dark");
+
+        // Update button text
+        toggleButton.textContent = isDarkMode ? "Dark Mode" : "Light Mode";
+      });
+    </script>
   </body>
 </html>
