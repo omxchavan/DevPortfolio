@@ -1,0 +1,23 @@
+.container {
+    cursor: url(./images/cursor.png), pointer;
+  }
+.carousel-inner{
+    max-width: 700px;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
