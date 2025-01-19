@@ -21,3 +21,11 @@
     margin-right: auto;
     margin-left: auto;
 }
+.music{
+    position: sticky;
+    bottom: 0;
+    margin-left: 95%;
+    border-radius: 50%;
+    background-color: #fff;
+   
+}

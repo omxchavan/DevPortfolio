@@ -11,7 +11,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!--header -->
@@ -281,32 +281,44 @@
       <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#profile" class="nav-link px-2 text-body-secondary">Profile</a></li>
-            <li class="nav-item"><a href="#Projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
-            <li class="nav-item"><a href="#TechStack" class="nav-link px-2 text-body-secondary">TechStack</a></li>
-            <li class="nav-item"><a href="#Contacts" class="nav-link px-2 text-body-secondary">Contacts</a></li>
+            <li class="nav-item">
+              <a href="#profile" class="nav-link px-2 text-body-secondary"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#Projects" class="nav-link px-2 text-body-secondary"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#TechStack" class="nav-link px-2 text-body-secondary"
+                >TechStack</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#Contacts" class="nav-link px-2 text-body-secondary"
+                >Contacts</a
+              >
+            </li>
           </ul>
-          <p class="text-center text-body-secondary">© 2025 Made by Om Chavan</p>
+          <p class="text-center text-body-secondary">
+            © 2025 Made by Om Chavan
+          </p>
         </footer>
-          </div>
+      </div>
     </section>
+
+   
+      <img src="./images/om.png"  class="music" alt="music" width="50rem" />
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const toggleButton = document.getElementById("darkModeToggle");
-      const body = document.body;
-
-      toggleButton.addEventListener("click", () => {
-        const isDarkMode = body.getAttribute("data-bs-theme") === "dark";
-        body.setAttribute("data-bs-theme", isDarkMode ? "light" : "dark");
-
-        // Update button text
-        toggleButton.textContent = isDarkMode ? "Dark Mode" : "Light Mode";
-      });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
