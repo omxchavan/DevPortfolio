@@ -10,8 +10,9 @@ toggleButton.addEventListener("click", () => {
   toggleButton.textContent = isDarkMode ? "Dark Mode" : "Light Mode";
 });
 
-//msic add on
-var aud = new Audio("./music/rap.mp3");
+//music add on
+var aud = new Audio("./music/rap1.mp3");
+aud.loop = true;
 $(".music").on("click", function (e) {
   if (aud.paused) {
     aud.play();
