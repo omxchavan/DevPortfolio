@@ -21,3 +21,4 @@ $(".music").on("click", function (e) {
     aud.currentTime = 0;
   }
 });
+ 

@@ -1,0 +1,215 @@
+:root {
+    --saffron: #FF9933;
+    --deep-saffron: #FF8C00;
+    --sacred-blue: #138808;
+    --ganges-blue: #000080;
+    --holy-gold: #FFD700;
+    --clay-red: #CD5C5C;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #FFF7E6;
+    color: #333;
+}
+
+.navbar-brand, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rozha One', serif;
+    color: var(--ganges-blue);
+}
+
+/* Ensure section titles are visible against their backgrounds */
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: var(--ganges-blue); /* Changed from white to ensure visibility */
+}
+
+/* Exception for dark background sections */
+.akhara-section .section-title {
+    color: white;
+}
+
+.navbar {
+    background-color: var(--saffron);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('https://source.unsplash.com/1600x900/?kumbhmela,india') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.hero-text {
+    background: rgba(255, 153, 51, 0.9); /* Increased opacity for better text visibility */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.countdown-box {
+    background: linear-gradient(135deg, var(--holy-gold), var(--deep-saffron));
+    border-radius: 15px;
+    padding: 2rem;
+    color: #000; /* Changed to black for better visibility on gold background */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--saffron);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-box {
+    background: var(--deep-saffron);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.sacred-timeline {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--sacred-blue);
+}
+
+.timeline-event {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--holy-gold);
+}
+
+.info-section {
+    padding: 4rem 0;
+    background: white;
+    margin: 2rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.significance-card {
+    background: linear-gradient(135deg, #fff, #f8f9fa);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--saffron);
+    color: #333; /* Ensuring text visibility */
+}
+
+.ritual-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    color: #333; /* Ensuring text visibility */
+}
+
+.ritual-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-gallery {
+    margin: 2rem 0;
+}
+
+.gallery-img {
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.history-timeline {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+}
+
+.history-event {
+    border-left: 3px solid var(--holy-gold);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    color: #333; /* Ensuring text visibility */
+}
+
+.history-event::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--holy-gold);
+}
+
+.akhara-section {
+    background: linear-gradient(135deg, var(--deep-saffron), #1a237e);
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.akhara-card {
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity for better contrast */
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.custom-btn {
+    background-color: var(--deep-saffron);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: var(--holy-gold);
+    transform: translateY(-2px);
+    color: var(--ganges-blue);
+}
+
+/* Additional styles for better text visibility */
+.hero-text h1, .hero-text p {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.akhara-section h2, .akhara-section h3, .akhara-section h4 {
+    color: white;
+}
